@@ -18,9 +18,10 @@ body {
 
 // .header {
 // }
-.header_container {
+.header__container {
     display: flex;
-    justify-content: center;
+    column-gap: 35px;
+    // justify-content: center;
     align-items: center;
     min-height: 116px;
     padding-top: 5px;
@@ -28,7 +29,7 @@ body {
 }
 // .header_logo {
 // }
-.header_menu {
+.header__menu {
     flex: 1 1 auto;
 }
 .menu {
@@ -41,12 +42,19 @@ body {
 // }
 // .icon-menu {
 // }
-// .menu_list {
-// }
+.menu__list {
+    display: flex;
+    column-gap: 35px;
+    justify-content: end;
+   
+}
 // .menu_item {
 // }
-// .menu_link {
-// }
+.menu__link {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.62; /* 26/16 */
+}
 // .header_cart {
 // }
 // .cart-header_text {
@@ -56,5 +64,6 @@ body {
 // .header_button {
 // }
 
-// .icon-menu {
-// }
+.icon-menu {
+    display: none;
+}
