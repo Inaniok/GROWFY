@@ -35,3 +35,11 @@ html {
     color: var(--first-title-color);
     text-decoration: none;
   }
+
+  a, a:link, a:visited  {
+    text-decoration: none;
+  }
+
+  ul, ul li {
+    list-style: none;
+  }
