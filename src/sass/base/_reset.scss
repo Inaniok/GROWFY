@@ -1,11 +1,16 @@
-html {
-    box-sizing: border-box;
+html,
+body {
+    height: 100%;
+    line-height: 1;
   }
   
   *,
   *::after,
   *::before {
-    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
   }
   
   h1,
@@ -17,12 +22,12 @@ html {
   p {
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: inherit;
+    font-size: inherit;
   }
   
   img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    vertical-align: top;
   }
 
 .list {
@@ -40,6 +45,19 @@ html {
     text-decoration: none;
   }
 
-  ul, ul li {
+  ul,
+  ol,
+  li {
     list-style: none;
+  }
+  button {
+    cursor: pointer;
+    background-color: inherit;
+  }
+  button, 
+  input {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
   }
