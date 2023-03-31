@@ -216,12 +216,30 @@ text-decoration: underline;
 display: flex;
 gap: 32px;
 }
+
+
 .main__content {
-    flex: 0 1 50%;
+flex: 0 1 50%;
+  align-self: center;
 }
-.main__title {
+
+.main__header {
+    position: relative;
+
 }
+
+.main__header::before {
+    content: '';
+    background: url('/src/images/decor.svg') 0 0 / 100% no-repeat;
+    width: 122px;
+    height: 122px;
+    position: absolute;
+    top: -20px;
+    left: -34px;
+}
+
 .main__text {
+    color: #9C9C9C;
 }
 .main__actions {
 }
@@ -269,6 +287,12 @@ max-width: 100%;
 @media (max-width: 991.98px) {
     .main {
         padding-top: 120px;
+    }
+    .main__container {
+        flex-direction: column;
+    }
+    .main__content {
+        align-self: stretch;
     }
 }
 
