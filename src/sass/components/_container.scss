@@ -38,6 +38,14 @@
     background-color: #68a9f0;
 }
 
+.button_dark {
+    background: rgba(129, 129, 139, 0.2);
+}
+
+.button_dark:hover {
+    background: rgba(129, 129, 139, 1);
+}
+
 @media (max-width: 991.98px) {
     .header__container,
     .menu__list {
