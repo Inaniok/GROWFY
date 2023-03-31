@@ -6,18 +6,16 @@ body {
     color:#9C9C9C;
 }
 
-/*-----------------------*/ 
-
-// .button {
-// }
-
 /*-------Header----------------*/ 
 
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(13, 13, 17, 0.522);
+}
 
-/*-----------------------*/ 
-
-// .header {
-// }
 .header__container {
     display: flex;
     column-gap: 35px;
@@ -27,9 +25,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-// .header__logo {
-   
-// }
+
 .header__menu {
     flex: 1 1 auto;
 }
@@ -39,12 +35,6 @@ body {
    
 }
 
-
-
-// .menu_icon {
-// }
-// .icon-menu {
-// }
 .menu__list {
     display: flex;
     flex-wrap: wrap;
@@ -53,8 +43,7 @@ body {
     justify-content: end;
    
 }
-// .menu_item {
-// }
+
 .menu__link {
     display: block;
     font-size: 16px;
@@ -72,14 +61,6 @@ body {
     display: flex;
     gap: 5px;
 }
-
-// .cart-header {
-//    
-// }
-
-// .header__cart:hover {
-//     text-decoration: underline;
-// }
 
 .cart-header__text:hover {
 text-decoration: underline;
@@ -221,5 +202,78 @@ text-decoration: underline;
         padding-top: 7px;
         border-radius: 0;
         background: url('/src/images/cart.svg') center / auto 100% no-repeat;
+    }
+}
+
+/*---------Main--------------*/ 
+
+.page__main {
+}
+.main {
+    padding-top: 160px;
+}
+.main__container {
+display: flex;
+gap: 32px;
+}
+.main__content {
+    flex: 0 1 50%;
+}
+.main__title {
+}
+.main__text {
+}
+.main__actions {
+}
+.main__button {
+}
+
+.main_images {
+    flex: 0 1 50%;
+
+}
+.images-main {
+    display: flex;
+    gap: 9.615385%; /* 60/624 */
+    justify-content: center;
+    }
+
+.images-main__column {
+display: flex;
+flex-direction: column;
+gap: 32px;
+}
+
+.images-main__item {
+    border-radius: 50% / 29%;
+    overflow: hidden;
+        }
+
+.images-main__item_1,
+.images-main__item_4 {
+    border-radius: 50% / 29%;
+        }       
+
+.images-main__item_2 {
+    border-radius: 50% 50% 0 50%;
+        }
+
+.images-main__item_3 {
+    border-radius: 50% 0% 50% 50%;
+                }       
+
+.images-main__item img {
+max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .main {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main {
+        padding-top: 100px;
     }
 }
