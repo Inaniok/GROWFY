@@ -28,7 +28,8 @@
     font-weight: 500;
     transition: background-color 0.3s ease 0s;
     line-height: 1.43; /* 22/14 */
-}    
+}  
+
 @media (max-width: 991.98px) {
     [class*="__button"] {
      padding: 14px 20px;
@@ -54,7 +55,7 @@
     font-size: 51px;
     line-height: 1.19; /* 61/51 */
     color: #fff;
-    max-width: 520px;
+    // max-width: 520px;
     position: relative;
 }
 
@@ -66,7 +67,7 @@
     color: #9C9C9C;
      font-size: 18px;
     line-height: 1.5; /* 27/18 */
-    max-width: 500px;
+    // max-width: 500px;
 }
 
 .header-main__text:not(:last-child) {
@@ -80,8 +81,10 @@
 
 .header-main__actions {
     display: flex;
-    gap: 32px;
+    column-gap: 32px;
+    row-gap: 15px;
 }
+
 .header-main__button {
 }
 
@@ -90,10 +93,32 @@
     font-size: 44px;;
 }}
 
+@media (max-width: 768px) {
+    .header-main__title {
+        max-width: 520px;
+    }
+    .header-main__text {
+        max-width: 500px;
+    }
+}
+
 @media (max-width: 767.98px) {
     .header-main__title {
     font-size: 32px;
-}}
+}
+.header-main__title:not(:last-child) {
+margin-bottom: 15px;
+}
+.header-main__text:not(:last-child) {
+    margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .header-main__actions {
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 991.98px) {
     .header__container,
