@@ -302,7 +302,7 @@ body {
   }
 }
 
-/*==============================================*/
+/*===================CLIENTS===========================*/
 
 .page__clients {
 }
@@ -337,15 +337,107 @@ body {
 }
 
 @media (max-width: 991.98px) {
-    .clients {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
+  .clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .clients__title {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767.98px) {
-    .clients {
-        padding-top: 30px;
-        padding-bottom: 30px;
-      }
+  .clients {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .clients__title {
+    margin-bottom: 20px;
+  }
+}
+
+/*==============SERVICES=====================*/
+
+.header-main__label {
+  display: inline-block;
+  border: 1px solid rgba(129, 129, 139, 0.2);
+  border-radius: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9c9c9c;
+  padding: 11px 18px;
+  transition: border 0.3s ease 0s;
+}
+
+.header-main__label:hover {
+  border: 1px solid rgba(129, 129, 139, 0.4);
+}
+
+.header-main__label:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.page__services {
+}
+
+.services {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.services__container {
+  display: flex;
+  gap: 32px;
+}
+.services__content {
+  flex: 0 1 50%;
+  align-self: center;
+}
+.services__header {
+}
+.services__items {
+  flex: 0 1 50%;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+.services__column {
+}
+.services__item {
+}
+.item-service {
+  background: rgba(129, 129, 139, 0.1);
+  border-radius: 30px;
+    padding: 55px 25px;
+}
+.item-service___icon {
+}
+
+.item-service___icon:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.item-service__title {
+    font-size: 19px;
+line-height: 1.42; /* 27/19 */
+}
+
+.item-service___title:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item-service__text {
+}
+
+@media (max-width: 991.98px) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
